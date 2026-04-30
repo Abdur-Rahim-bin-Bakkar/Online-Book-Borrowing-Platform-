@@ -2,7 +2,7 @@ import React from 'react';
 import ReviewCard from './ReviewCard';
 
 const Review = async () => {
-    const res = await fetch('http://localhost:3000/review.json')
+    const res = await fetch('http://localhost:3000/review.json', {cache:'no-store'})
     const reviews = await res.json()
     console.log(reviews)
 
