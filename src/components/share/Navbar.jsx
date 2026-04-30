@@ -5,15 +5,16 @@ import logo from '@/assets/logo.png'
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import "animate.css";
+import { FaBookOpen, FaHome, FaUserTie } from 'react-icons/fa';
 
 
 const Navbar = () => {
     const path = usePathname()
 
     const links = <>
-        <Link className={`${path === '/' && 'border-b pb-1 text-success font-semibold'}`} href={'/'}>Home</Link>
-        <Link className={`${path === '/allbooks' && 'border-b pb-1 text-success font-semibold'}`} href={'/allbooks'}>All Books</Link>
-        <Link className={`${path === '/profile' && 'border-b pb-1 text-success font-semibold'}`} href={'/profile'}>profile</Link>
+        <Link className={`flex gap-2 items-center ${path === '/' && 'border-b pb-1 text-success font-semibold'}`} href={'/'}><FaHome className='text-lg'/> Home</Link>
+        <Link className={`flex gap-2 items-center ${path === '/allbooks' && 'border-b pb-1 text-success font-semibold'}`} href={'/allbooks'}><FaBookOpen className='text-lg'/> All Books</Link>
+        <Link className={`flex gap-2 items-center ${path === '/profile' && 'border-b pb-1 text-success font-semibold'}`} href={'/profile'}><FaUserTie className='text-lg'/> profile</Link>
     </>
 
     return (
@@ -38,7 +39,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 gap-5">
+                    <ul className="menu menu-horizontal px-1 gap-8">
                         {links}
                     </ul>
                 </div>

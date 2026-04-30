@@ -6,7 +6,7 @@ import { FaLocationArrow } from 'react-icons/fa6';
 const BookCard = ({ book }) => {
     // console.log(book)
     return (
-        <div className='card p-3 bg-[#f7f6f1] shadow hover:shadow-2xl duration-500'>
+        <div className='card p-3 bg-[#f7f6f1] shadow hover:shadow-2xl duration-1000'>
             <div className="flex-1">
                 <Image className='w-full min-h-70 object-cover rounded-md' src={book.image_url} alt='image' width={300} height={250} />
             </div>

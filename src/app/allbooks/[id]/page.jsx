@@ -14,7 +14,7 @@ const BookDetailsPage = async ({ params }) => {
         <div>
             <div className='card p-3 md:p-10 bg-[#f7f6f1] my-10 duration-50 md:flex-row gap-5 '>
                 <div className="">
-                    <Image className='max-w-100 object-cover rounded-md' src={currentBook.image_url} alt='image' width={300} height={250} />
+                    <Image className='max-w-100 mx-auto object-cover rounded-md' src={currentBook.image_url} alt='image' width={300} height={250} />
                 </div>
 
                 <div className="flex-1 space-y-6">
