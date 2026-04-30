@@ -5,8 +5,9 @@ import React from 'react';
 import { FaStar } from 'react-icons/fa6';
 
 const BookDetailsPage = async ({ params }) => {
+    
     const { id } = await params;
-    const res = await fetch("http://localhost:3000/books.json", { cache: 'no-store' })
+    const res = await fetch("https://book-library-two-kohl.vercel.app/books.json", { cache: 'no-store' })
     const books = await res.json()
     const currentBook = books.find(book => book.id == id)
     console.log(currentBook)

@@ -2,7 +2,7 @@ import React from 'react';
 import BookCard from './BookCard';
 
 const ToopBooks = async() => {
-    const res = await fetch('http://localhost:3000/books.json',{cache:"no-store"})
+    const res = await fetch('https://book-library-two-kohl.vercel.app/books.json',{cache:"no-store"})
     const books = await res.json()
     console.log(books)
     return (

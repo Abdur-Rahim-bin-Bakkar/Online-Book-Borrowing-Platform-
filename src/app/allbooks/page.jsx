@@ -9,7 +9,7 @@ const page = async ({ searchParams }) => {
     console.log(search, 'search')
     console.log('eta ki')
 
-    const res = await fetch("http://localhost:3000/books.json", { cache: 'no-store' })
+    const res = await fetch("https://book-library-two-kohl.vercel.app/books.json", { cache: 'no-store' })
     const books = await res.json()
     let fileterBooks = search  ? books.filter(book => book.title.toLowerCase().includes(search.toLowerCase())) :  category? books.filter(book=> book.category.toLowerCase() === category.toLowerCase()) : books;
     console.log(fileterBooks)
