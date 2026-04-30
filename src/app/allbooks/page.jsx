@@ -11,7 +11,7 @@ const page = async ({ searchParams }) => {
 
     const res = await fetch("http://localhost:3000/books.json", { cache: 'no-store' })
     const books = await res.json()
-    const fileterBooks = search ? books.filter(book => book.title.toLowerCase().includes(search)) : books;
+    let fileterBooks = search  ? books.filter(book => book.title.toLowerCase().includes(search.toLowerCase())) :  category? books.filter(book=> book.category.toLowerCase() === category.toLowerCase()) : books;
     console.log(fileterBooks)
     // console.log(books)
     return (

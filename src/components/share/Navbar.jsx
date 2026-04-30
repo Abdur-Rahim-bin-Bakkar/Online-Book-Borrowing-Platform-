@@ -4,6 +4,8 @@ import React from 'react';
 import logo from '@/assets/logo.png'
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import "animate.css";
+
 
 const Navbar = () => {
     const path = usePathname()
@@ -30,7 +32,7 @@ const Navbar = () => {
                     </div>
                     <div className="rounded-full  w-15 h-15 flex justify-center items-center shadow bg-[#f8f9f4]">
 
-                        <Link className='' href={'/'}>
+                        <Link className='animate__animated animate__bounce hover:animate__animated animate__bounce ' href={'/'}>
                             <Image className='w-30  rounded-full ' src={logo} alt='logo' height={70} width={70} />
                         </Link>
                     </div>
