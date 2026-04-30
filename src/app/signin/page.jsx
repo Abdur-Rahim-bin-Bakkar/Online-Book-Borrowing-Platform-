@@ -60,11 +60,11 @@ const page = () => {
                         />
 
                     </div>
-                    <p className='text-[#403F3F] text-center mt-3'>Dont’t Have An Account ? <Link href={'/signup'} className=' text-[#F75B5F] font-bold cursor-pointer'>Register</Link></p>
 
                     <br />
                     <button className='btn w-full mt-2 btn-success text-white font-bold'>Sign Up</button>
                 </form>
+                    <p className='text-[#403F3F] text-center mt-3'>Dont’t Have An Account ? <Link href={'/signup'} className=' text-[#F75B5F] font-bold cursor-pointer'>Register</Link></p>
                 <div className="divider">OR</div>
                 <button onClick={signIn} className='btn btn-outline w-full mt-5 border border-blue-600 text-blue-600 text-lg'><FaGoogle /> Login With Google</button>
             </div>

@@ -6,7 +6,8 @@ const ToopBooks = async() => {
     const books = await res.json()
     console.log(books)
     return (
-        <div>
+        <div className='mt-5'>
+            <h1 className=' text-2xl md:text-4xl my-10 font-bold text-center'>Featured Books</h1>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-5">
                 {
                     books.slice(0,4).map(book=> <BookCard key={book.id} book={book} />)

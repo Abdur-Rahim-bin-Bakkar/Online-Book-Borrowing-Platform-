@@ -5,6 +5,7 @@ import { FaGoogle } from 'react-icons/fa';
 import { authClient } from "@/lib/auth-client";
 import { redirect } from 'next/navigation';
 import { toast } from 'react-toastify';
+import Link from 'next/link';
 
 const page = () => {
     const {
@@ -53,7 +54,7 @@ const page = () => {
     };
     return (
         <div className='min-h-screen'>
-            <div className="card max-w-150 shadow mt-15 mx-auto p-5 hover:shadow-2xl duration-700">
+            <div className="card max-w-150 shadow mt-15 mx-auto p-5 mb-6 hover:shadow-2xl duration-700">
                 <h1 className='text-2xl font-bold text-center'>Sign UP Form</h1>
                 <form onSubmit={handleSubmit(handleForm)} className='mt-5' action="">
                     <div className="space-y-3">
@@ -79,6 +80,7 @@ const page = () => {
                     <br />
                     <button className='btn w-full mt-5 btn-success text-white font-bold'>Sign Up</button>
                 </form>
+                <p className='text-[#403F3F] text-center mt-3'>Already Have An Account ? <Link href={'/signin'} className=' text-[#F75B5F] font-bold cursor-pointer'>Login</Link></p>
                 <div className="divider">OR</div>
                 <button onClick={signIn} className='btn btn-outline w-full mt-5 border border-blue-600 text-blue-600 text-lg'><FaGoogle /> Login With Google</button>
             </div>

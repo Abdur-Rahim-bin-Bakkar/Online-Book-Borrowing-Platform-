@@ -2,6 +2,7 @@
 import ModalForm from '@/components/share/ModalForm';
 import { authClient } from '@/lib/auth-client';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { FaEdit } from 'react-icons/fa';
 // import { type } from './../../../.next/types/routes.d';
@@ -39,22 +40,8 @@ const page = () => {
                     <p className='my-3'>User ID: {session?.user?.id}</p>
                     <h1 className=' text-lg font-bold'>{session?.user?.name}</h1>
 
-                    <button className="btn mt-5" onClick={() => document.getElementById('my_modal_2').showModal()}><FaEdit className='text-lg ' />Edit your Profile</button>
-                    <dialog id="my_modal_2" className="modal">
-                        <div className="modal-box">
-                            <form onSubmit={handleEditProfile} method="dialog" className="modal-backdrop text-start">
-
-                                <label htmlFor="" className='font-bold text-lg text-black'>Name</label>
-                                <br />
-                                <input type="text" className='input w-full mb-5 text-black' name="name" id="" placeholder='enter your new name' />
-                                <label htmlFor="" className='font-bold text-lg text-black'>Image URL</label>
-                                <br />
-                                <input type="text" className='input w-full mb-5 text-black' name="image" id="" placeholder='enter new image URl' />
-                                <button type='submit' className='btn'>Save</button>
-                            </form>
-                        </div>
-
-                    </dialog>
+                    <Link href={'/edit'} className="btn mt-5" ><FaEdit className='text-lg ' />Edit your Profile</Link>
+                    
                 </div>
             }
         </div>

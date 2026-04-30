@@ -29,7 +29,7 @@ const BookDetailsPage = async ({ params }) => {
                     <p className='my-4 text-lg font-bold'>category: <span className='text-[#6356c1]'> {currentBook.category}</span> </p>
                     <p className='my-4 text-lg font-bold'>available quantity
                         : <span className='text-[#6356c1]'> {currentBook.available_quantity
-                        }</span> </p>
+                        } copies left</span> </p>
 
                     <p className='my-4 '>{currentBook.description}</p>
 
