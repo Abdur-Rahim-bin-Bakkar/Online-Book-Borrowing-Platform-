@@ -7,6 +7,7 @@ import { usePathname } from 'next/navigation';
 import "animate.css";
 import { FaBookOpen, FaHome, FaUserTie } from 'react-icons/fa';
 import { authClient } from '@/lib/auth-client';
+import { Audio } from 'react-loader-spinner';
 
 
 const Navbar = () => {
@@ -18,7 +19,7 @@ const Navbar = () => {
         refetch //refetch the session
     } = authClient.useSession()
     console.log(session, 'session')
-    const handleSignOut =async ()=>{
+    const handleSignOut = async () => {
         await authClient.signOut();
     }
 
@@ -57,13 +58,25 @@ const Navbar = () => {
                 <div className="navbar-end gap-3">
 
                     {
-                        session ? <>
+                        isPending ? <>
+                        <Audio
+                            height="40"
+                            width="40"
+                            color="#4fa94d"
+                            ariaLabel="audio-loading"
+                            wrapperStyle={{}}
+                            wrapperClass="wrapper-class"
+                            visible={true}
+                        />
+                        <p>Loading...</p>
+                        </> :
+                            session ? <>
 
-                            <p className='text-lg font-bold'>{session?.user?.name}</p>
-                            <a className="btn"  onClick={handleSignOut}>Logout</a>
-                        </>
-                            :
-                            <Link href={'/signin'} className='btn btn-primary'>Login</Link>
+                                <p className='text-lg font-bold'>{session?.user?.name}</p>
+                                <a className="btn" onClick={handleSignOut}>Logout</a>
+                            </>
+                                :
+                                <Link href={'/signin'} className='btn btn-primary'>Login</Link>
                     }
                 </div>
             </div>
