@@ -6,7 +6,7 @@
     "description": "A mysterious story of a forest hiding secrets that change lives forever.",
     "category": "Story",
     "available_quantity": 12,
-    "image_url": "https://picsum.photos/200/300?random=1"
+    "image_url": "https://m.media-amazon.com/images/I/51PVkprGBML._SY445_SX342_QL70_FMwebp_.jpg"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "description": "A complete guide to mastering JavaScript from basics to advanced concepts.",
     "category": "Tech",
     "available_quantity": 8,
-    "image_url": "https://picsum.photos/200/300?random=2"
+    "image_url": "https://m.media-amazon.com/images/I/41Bgr1d0lgL._SY445_SX342_QL70_FMwebp_.jpg"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "description": "Explore the mysteries of the universe and the science behind galaxies.",
     "category": "Science",
     "available_quantity": 10,
-    "image_url": "https://picsum.photos/200/300?random=3"
+    "image_url": "https://m.media-amazon.com/images/I/51PEQa3hlgL._SY445_SX342_ML2_.jpg"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "description": "A thrilling journey through time travel and unexpected consequences.",
     "category": "Story",
     "available_quantity": 6,
-    "image_url": "https://picsum.photos/200/300?random=4"
+    "image_url": "https://m.media-amazon.com/images/I/51YMbCBiQEL._SY445_SX342_QL70_ML2_.jpg"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "description": "Learn React step by step and build modern web applications.",
     "category": "Tech",
     "available_quantity": 15,
-    "image_url": "https://picsum.photos/200/300?random=5"
+    "image_url": "https://m.media-amazon.com/images/I/314bTjfqIuL._SY445_SX342_QL70_ML2_.jpg"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "description": "An insightful look into how the human brain works and processes information.",
     "category": "Science",
     "available_quantity": 9,
-    "image_url": "https://picsum.photos/200/300?random=6"
+    "image_url": "https://m.media-amazon.com/images/I/41DPY9Y+arL._SX342_SY445_ML2_.jpg"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "description": "A heart-touching story about memories, love, and lost connections.",
     "category": "Story",
     "available_quantity": 11,
-    "image_url": "https://picsum.photos/200/300?random=7"
+    "image_url": "https://m.media-amazon.com/images/I/51kUZ9oKKyL._SY445_SX342_ML2_.jpg"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "description": "Build fast and scalable web apps using Next.js and modern tools.",
     "category": "Tech",
     "available_quantity": 7,
-    "image_url": "https://picsum.photos/200/300?random=8"
+    "image_url": "https://m.media-amazon.com/images/I/41NJ0OzC7iL._SY445_SX342_ML2_.jpg"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "description": "Dive into the strange and fascinating world of quantum physics.",
     "category": "Science",
     "available_quantity": 5,
-    "image_url": "https://picsum.photos/200/300?random=9"
+    "image_url": "https://m.media-amazon.com/images/I/71l6LGelTiL._SL1499_.jpg"
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "description": "A suspenseful story full of twists, secrets, and unexpected endings.",
     "category": "Story",
     "available_quantity": 13,
-    "image_url": "https://picsum.photos/200/300?random=10"
+    "image_url": "https://m.media-amazon.com/images/I/61Efwpc1TXL._SL1499_.jpg"
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "description": "Master advanced CSS techniques to create beautiful web designs.",
     "category": "Tech",
     "available_quantity": 14,
-    "image_url": "https://picsum.photos/200/300?random=11"
+    "image_url": "https://m.media-amazon.com/images/I/61Au24iqAWL._SL1280_.jpg"
   },
   {
     "id": 12,
@@ -105,6 +105,6 @@
     "description": "Understand the structure and function of cells in living organisms.",
     "category": "Science",
     "available_quantity": 6,
-    "image_url": "https://picsum.photos/200/300?random=12"
+    "image_url": "https://m.media-amazon.com/images/I/91khOHws6kL._SL1500_.jpg"
   }
 ]

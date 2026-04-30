@@ -17,7 +17,7 @@ const page = async ({ searchParams }) => {
     return (
         <div>
             <SearachBar/>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mb-5 mt-15">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-5 mt-15">
                 {
                     fileterBooks.map(book => <BookCard key={book.id} book={book} />)
                 }
