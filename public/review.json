@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Rahim Ahmed",
+    "rating": 5,
+    "comment": "Amazing library! I found so many useful books easily.",
+    "image_url": "https://i.pravatar.cc/150?img=1"
+  },
+  {
+    "id": 2,
+    "name": "Sadia Islam",
+    "rating": 4,
+    "comment": "Great collection and very easy to use interface.",
+    "image_url": "https://i.pravatar.cc/150?img=2"
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Hasan",
+    "rating": 5,
+    "comment": "I love the design and smooth browsing experience.",
+    "image_url": "https://i.pravatar.cc/150?img=3"
+  },
+  {
+    "id": 4,
+    "name": "Nusrat Jahan",
+    "rating": 4,
+    "comment": "Good platform for reading and discovering new books.",
+    "image_url": "https://i.pravatar.cc/150?img=4"
+  },
+  {
+    "id": 5,
+    "name": "Sabbir Hossain",
+    "rating": 5,
+    "comment": "One of the best digital libraries I have used.",
+    "image_url": "https://i.pravatar.cc/150?img=5"
+  },
+  {
+    "id": 6,
+    "name": "Mim Akter",
+    "rating": 4,
+    "comment": "Nice UI and helpful book categories.",
+    "image_url": "https://i.pravatar.cc/150?img=6"
+  }
+]
