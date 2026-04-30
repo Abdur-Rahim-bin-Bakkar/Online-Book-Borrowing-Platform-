@@ -34,6 +34,8 @@ This project is built as a learning and practice project for **Next.js, authenti
 - React
 - Tailwind CSS
 - JavaScript (ES6+)
+- better auth
+- daisy ui
 
 ---
 
@@ -41,9 +43,8 @@ This project is built as a learning and practice project for **Next.js, authenti
 
 ```bash
 next
-react
-react-dom
+react-icons
 react-toastify
 tailwindcss
-autoprefixer
-postcss
+react-first-marque
+react-form
