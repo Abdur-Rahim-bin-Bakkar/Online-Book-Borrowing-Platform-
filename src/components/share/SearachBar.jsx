@@ -10,13 +10,13 @@ const SearachBar = () => {
     const { search, setSearch, category, setCategory } = useContext(SearchContextApi)
     const router = useRouter()
     const handleSearch = () => {
-        router.push(`http://localhost:3000/allbooks?search=${search}`)
+        router.push(`/allbooks?search=${search}`)
     }
 
     const handleFilter = (e) => {
         // console.log(e.target.value)
         // setCategory(e.target.value)
-        router.push(`http://localhost:3000/allbooks?category=${e.target.value}`)
+        router.push(`/allbooks?category=${e.target.value}`)
     }
 
     return (

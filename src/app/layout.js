@@ -4,6 +4,8 @@ import Navbar from "@/components/share/Navbar";
 import Footer from "@/components/share/Footer";
 import Provider from "@/lib";
 import { ToastContainer } from "react-toastify";
+import dns from "node:dns/promises";
+dns.setServers(["1.1.1.1", "8.8.8.8"]);
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

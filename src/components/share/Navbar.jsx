@@ -6,15 +6,26 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import "animate.css";
 import { FaBookOpen, FaHome, FaUserTie } from 'react-icons/fa';
+import { authClient } from '@/lib/auth-client';
 
 
 const Navbar = () => {
     const path = usePathname()
+    const {
+        data: session,
+        isPending, //loading state
+        error, //error object
+        refetch //refetch the session
+    } = authClient.useSession()
+    console.log(session, 'session')
+    const handleSignOut =async ()=>{
+        await authClient.signOut();
+    }
 
     const links = <>
-        <Link className={`flex gap-2 items-center ${path === '/' && 'border-b pb-1 text-success font-semibold'}`} href={'/'}><FaHome className='text-lg'/> Home</Link>
-        <Link className={`flex gap-2 items-center ${path === '/allbooks' && 'border-b pb-1 text-success font-semibold'}`} href={'/allbooks'}><FaBookOpen className='text-lg'/> All Books</Link>
-        <Link className={`flex gap-2 items-center ${path === '/profile' && 'border-b pb-1 text-success font-semibold'}`} href={'/profile'}><FaUserTie className='text-lg'/> profile</Link>
+        <Link className={`flex gap-2 items-center ${path === '/' && 'border-b pb-1 text-success font-semibold'}`} href={'/'}><FaHome className='text-lg' /> Home</Link>
+        <Link className={`flex gap-2 items-center ${path === '/allbooks' && 'border-b pb-1 text-success font-semibold'}`} href={'/allbooks'}><FaBookOpen className='text-lg' /> All Books</Link>
+        <Link className={`flex gap-2 items-center ${path === '/profile' && 'border-b pb-1 text-success font-semibold'}`} href={'/profile'}><FaUserTie className='text-lg' />MY profile</Link>
     </>
 
     return (
@@ -43,8 +54,17 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">Button</a>
+                <div className="navbar-end gap-3">
+
+                    {
+                        session ? <>
+
+                            <p className='text-lg font-bold'>{session?.user?.name}</p>
+                            <a className="btn"  onClick={handleSignOut}>Logout</a>
+                        </>
+                            :
+                            <Link href={'/signin'} className='btn btn-primary'>Login</Link>
+                    }
                 </div>
             </div>
         </div>
