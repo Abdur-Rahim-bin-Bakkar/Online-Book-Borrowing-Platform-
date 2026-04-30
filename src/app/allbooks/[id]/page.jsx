@@ -1,5 +1,6 @@
 import Brrow from '@/components/share/Brrow';
 import Image from 'next/image';
+import { notFound } from 'next/navigation';
 import React from 'react';
 import { FaStar } from 'react-icons/fa6';
 
@@ -9,7 +10,10 @@ const BookDetailsPage = async ({ params }) => {
     const books = await res.json()
     const currentBook = books.find(book => book.id == id)
     console.log(currentBook)
-    const numbers = [1, 2, 3, 4, 5, 6, 7]
+    if(!currentBook){
+        notFound()
+    }
+   
     return (
         <div>
             <div className='card p-3 md:p-10 bg-[#f7f6f1] my-10 duration-50 md:flex-row gap-5 '>

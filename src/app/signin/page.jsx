@@ -4,6 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { FaGoogle } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 
 const page = () => {
     const {
@@ -27,11 +28,19 @@ const page = () => {
         });
         console.log(serverData, 'data')
         console.log(error, 'error')
+        if (error) {
+            toast.error(`${error.message}`)
+        }
+        if(!error){
+            toast.success('successfully login')
+        }
+
 
     }
     const signIn = async () => {
         const data = await authClient.signIn.social({
             provider: "google",
+        
         });
     };
     return (

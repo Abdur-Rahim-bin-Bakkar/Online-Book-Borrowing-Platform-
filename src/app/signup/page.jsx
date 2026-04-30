@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import { FaGoogle } from 'react-icons/fa';
 import { authClient } from "@/lib/auth-client";
 import { redirect } from 'next/navigation';
+import { toast } from 'react-toastify';
 
 const page = () => {
     const {
@@ -40,6 +41,9 @@ const page = () => {
         console.log('dfdf')
         console.log(ServerData)
         console.log(error)
+        if(error){
+            toast.error(`${error.message}`)
+        }
 
     }
     const signIn = async () => {
